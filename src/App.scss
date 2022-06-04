@@ -1,0 +1,21 @@
+.dropdown {
+    border: unset;
+    .btn {
+        border: unset;
+        &-active {
+            border: unset;
+        }
+    }
+    
+   &-toggle::after {
+    display: none !important; 
+
+   }
+}
+
+.dropdown .btn:focus {
+    outline: none !important;
+    outline-offset: none !important;
+    box-shadow: none !important;
+}
+

@@ -1,0 +1,18 @@
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 1;
+    padding: 1rem;
+    border-top: 1px solid gray;
+}
+
+#dropdown-menu {
+    color: black;
+    background-color: unset;
+    border-color: unset;
+
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
