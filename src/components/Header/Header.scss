@@ -6,10 +6,20 @@
     color: black;
     background-color: unset;
     border-color: unset;
+    
 }
 #dropdown-cart {
     color: black;
     background-color: unset;
     border-color: unset;
+}
+
+a {
+    &:active {
+        background-color: transparent !important;
+    }
+}
+.dropdown-item {
+    
 }
 

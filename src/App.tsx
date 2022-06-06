@@ -4,6 +4,8 @@ import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import "./App.scss";
+import Profile from "./pages/Profile/Profile";
+import Product from "./pages/Product/Product";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/product/:name" element={<Product />} />
       </Route>
     </Routes>
   );
