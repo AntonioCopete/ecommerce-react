@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Dropdown } from "react-bootstrap";
 import { FiMenu } from "react-icons/fi";
-import { Link, useNavigate } from "react-router-dom";
-import { fetchCategories, fetchCategoryProducts } from "../../api/api";
+import { useNavigate } from "react-router-dom";
+import { fetchCategories } from "../../api/api";
 import "./Menu.scss";
 
 const Menu = () => {

@@ -4,11 +4,14 @@ import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import { AuthContextProvider } from "./context/AuthContext";
+import { CartContextProvider } from "./context/CartContext";
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <AuthContextProvider>
-    <Router>
-      <App />
-    </Router>
+    <CartContextProvider>
+      <Router>
+        <App />
+      </Router>
+    </CartContextProvider>
   </AuthContextProvider>
 );
