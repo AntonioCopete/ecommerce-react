@@ -3,7 +3,7 @@ import "./ProductGrid.scss";
 
 const ProductsGrid = ({ products }: any) => {
   return (
-    <div className="product">
+    <div className="product-grid">
       {products.map((product: any) => {
         return <ProductCard key={product._id} product={product} />;
       })}

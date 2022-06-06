@@ -21,4 +21,14 @@ const fetchProduct = async (productName: any) => {
   return data;
 };
 
-export { signUp, signIn, fetchProducts, fetchProduct };
+const fetchCategories = async () => {
+  const { data } = await axios.get(`${CONFIG.API.URL}/categories`);
+  return data;
+};
+
+const fetchCategoryProducts = async (categoryName: any) => {
+  const { data } = await axios.get(`${CONFIG.API.URL}/categories/${categoryName}/products`);
+  return data;
+};
+
+export { signUp, signIn, fetchProducts, fetchProduct, fetchCategories, fetchCategoryProducts };
